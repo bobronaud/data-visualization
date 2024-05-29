@@ -1,11 +1,11 @@
-import { Response } from '../types/data';
+import { Instance as InstanseType } from '../types/data';
 
 type Props = {
-  data: Response;
+  data: InstanseType;
 };
 
 const Instance = ({ data }: Props) => {
-  return <div></div>;
+  return <div>стоолб</div>;
 };
 
 export default Instance;

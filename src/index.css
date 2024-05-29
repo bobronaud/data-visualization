@@ -1,20 +1,22 @@
 * {
   margin: 0;
-  padding: 0,
+  padding: 0;
 }
-  
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-style: normal;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
 }
 .container {
-  min-width: 591px;
-  min-height: 534px;
+  min-width: 400px;
+  min-height: 400px;
+  width: 50vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -29,10 +31,15 @@ body {
   align-items: center;
   font-size: 1rem;
   font-weight: 500;
-  margin: 1rem 1rem 0 1rem;
+  margin: 1rem;
 }
 
-
+.body {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  flex-grow: 1;
+}
 
 .captions {
   display: flex;
@@ -40,37 +47,36 @@ body {
   align-items: center;
   font-size: 0.7rem;
   font-weight: 400;
-  margin: 1rem 1rem 0 1rem;
-
+  margin: 1rem;
 }
 .captions * {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 .caption-client::before {
   content: '';
   display: inline-block;
   width: 1rem;
-  height: 1rem; 
+  height: 1rem;
   margin-right: 0.5rem;
-  background-color: #4AB6E8;
+  background-color: #4ab6e8;
   border-radius: 3px;
 }
 .caption-server::before {
   content: '';
   display: inline-block;
   width: 1rem;
-  height: 1rem; 
+  height: 1rem;
   margin-right: 0.5rem;
-  background-color: #AA6FAC;
+  background-color: #aa6fac;
   border-radius: 3px;
 }
 .caption-db::before {
   content: '';
   display: inline-block;
   width: 1rem;
-  height: 1rem; 
+  height: 1rem;
   margin-right: 0.5rem;
-  background-color: #E85498;
+  background-color: #e85498;
   border-radius: 3px;
 }

@@ -29,11 +29,11 @@ const App = () => {
   }, []);
 
   return (
-    <section className='container'>
+    <div className="container">
       {loading && 'Загрузка данных ...'}
       {error}
       {data && <Section data={data} />}
-    </section>
+    </div>
   );
 };
 
